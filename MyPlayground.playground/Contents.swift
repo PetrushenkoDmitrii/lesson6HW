@@ -56,6 +56,7 @@ print(getTopStudents(students: students, top: 3))
 
 func  getUniqueOptionalSubjects(students: [Student]) -> Set<String> {
     let allFacultative = students.flatMap { $0.facultative }
+    // TODO: Названия переменных всегда с маленькой буквы
     let UniqueFacultative = Set(allFacultative)
     return UniqueFacultative
 }
